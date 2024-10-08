@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TariffProvider.Test": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

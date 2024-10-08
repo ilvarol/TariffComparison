@@ -1,0 +1,52 @@
+services:
+  tariffprovider.webapi:
+    container_name: tariffproviderwebapi
+    image: tariffproviderwebapi
+    build:
+      context: .
+      dockerfile: src/TariffProvider/WebApi/TariffProvider.WebApi/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:5000/;
+    ports:
+      - "5000:5000"
+    networks:
+      - backend
+    depends_on:
+      - mssql
+
+  tariffcomparison.webapi:
+    container_name: tariffcomparisonwebapi
+    image: tariffcomparisonwebapi
+    build:
+      context: .
+      dockerfile: src/WebApi/TariffComparison.WebApi/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:4000/;
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+    depends_on:
+      - mssql
+      - tariffprovider.webapi
+
+  mssql:
+    container_name: mssql
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=!23ARZ23
+    ports:
+      - "1433:1433"
+    networks:
+      - backend
+    volumes:
+      - mssql-data:/var/opt/mssql
+
+networks:
+  backend:
+
+volumes:
+  mssql-data:

@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21C69B14-0DD3-42A7-B3E1-C79226D88221}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yml = compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TariffProvider", "TariffProvider", "{281155EC-8110-422C-92C4-CD2081E36963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{373D1F87-5FEC-496F-8076-C6949742AC57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D81CDDDC-8379-4594-A7A5-9BE5490C3963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DA5664D7-FD24-49DF-8C83-8F909854EBDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{222C7AE0-1FDA-49B2-96FD-809653E22DCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffProvider.Application", "src\TariffProvider\Core\TariffProvider.Application\TariffProvider.Application.csproj", "{9375283B-7090-4EF8-908E-0285371FB948}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffProvider.Domain", "src\TariffProvider\Core\TariffProvider.Domain\TariffProvider.Domain.csproj", "{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffProvider.Persistence", "src\TariffProvider\Infrastructure\TariffProvider.Persistence\TariffProvider.Persistence.csproj", "{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffProvider.WebApi", "src\TariffProvider\WebApi\TariffProvider.WebApi\TariffProvider.WebApi.csproj", "{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffComparison.WebApi", "src\WebApi\TariffComparison.WebApi\TariffComparison.WebApi.csproj", "{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{154091BF-603F-4657-8FC2-225F580A67F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TariffComparison.Test", "src\Test\TariffComparison.Test\TariffComparison.Test.csproj", "{2C003FA1-0C18-4CB9-964A-09452ABD5877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9375283B-7090-4EF8-908E-0285371FB948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9375283B-7090-4EF8-908E-0285371FB948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9375283B-7090-4EF8-908E-0285371FB948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9375283B-7090-4EF8-908E-0285371FB948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C003FA1-0C18-4CB9-964A-09452ABD5877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C003FA1-0C18-4CB9-964A-09452ABD5877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C003FA1-0C18-4CB9-964A-09452ABD5877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C003FA1-0C18-4CB9-964A-09452ABD5877}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{281155EC-8110-422C-92C4-CD2081E36963} = {21C69B14-0DD3-42A7-B3E1-C79226D88221}
+		{373D1F87-5FEC-496F-8076-C6949742AC57} = {21C69B14-0DD3-42A7-B3E1-C79226D88221}
+		{D81CDDDC-8379-4594-A7A5-9BE5490C3963} = {281155EC-8110-422C-92C4-CD2081E36963}
+		{DA5664D7-FD24-49DF-8C83-8F909854EBDA} = {281155EC-8110-422C-92C4-CD2081E36963}
+		{222C7AE0-1FDA-49B2-96FD-809653E22DCC} = {281155EC-8110-422C-92C4-CD2081E36963}
+		{9375283B-7090-4EF8-908E-0285371FB948} = {D81CDDDC-8379-4594-A7A5-9BE5490C3963}
+		{A5B8DAFB-7AF3-4517-8810-5B6D597C29CE} = {D81CDDDC-8379-4594-A7A5-9BE5490C3963}
+		{F3DB2336-91C7-4351-95B1-60CF6BBF6E5D} = {DA5664D7-FD24-49DF-8C83-8F909854EBDA}
+		{F93124B8-EA2A-4B0F-89CF-1EB42D85F5AC} = {222C7AE0-1FDA-49B2-96FD-809653E22DCC}
+		{339AB0BB-D0E6-44FC-87AD-0E259A6C88E6} = {373D1F87-5FEC-496F-8076-C6949742AC57}
+		{154091BF-603F-4657-8FC2-225F580A67F0} = {21C69B14-0DD3-42A7-B3E1-C79226D88221}
+		{2C003FA1-0C18-4CB9-964A-09452ABD5877} = {154091BF-603F-4657-8FC2-225F580A67F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97F861C4-F196-4C91-BA7B-785DB37F9A35}
+	EndGlobalSection
+EndGlobal
